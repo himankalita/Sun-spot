@@ -1,48 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Links</title>
-    <style>
-        /* Style for the label boxes */
-        .label-box {
-            display: inline-block;
-            padding: 10px;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            cursor: pointer;
-            margin-right: 10px;
-        }
-
-        /* Remove the default underlines for links */
-        .label-box a {
-            text-decoration: none;
-            color: #333;
-        }
-    </style>
+    <title>SUN_SPOT_DETECTION</title>
+    <link rel="stylesheet" href="styles.css"
 </head>
 <body>
-    <h1>Useful Links</h1>
+    <h1>SUN_SPOT_DETECTION</h1>
 
     <!-- Label for "Data" -->
-    <div class="label-box" onclick="redirectTo('https://sdo.gsfc.nasa.gov/data/')">
-        Data
-    </div>
+    <label>Data:</label>
+    <a href="https://sdo.gsfc.nasa.gov/data/">https://sdo.gsfc.nasa.gov/data/</a>
+    <br>
 
     <!-- Label for "Code" -->
-    <div class="label-box" onclick="redirectTo('https://github.com/himankalita/Sun-spot')">
-        Code
-    </div>
+    <label>Code:</label>
+    <a href="https://github.com/himankalita/Sun-spot">https://github.com/himankalita/Sun-spot</a>
+    <br>
 
     <!-- Label for "Yolov8" -->
-    <div class="label-box" onclick="redirectTo('https://docs.ultralytics.com/')">
-        Yolov8
-    </div>
-
-    <!-- JavaScript function to redirect to the clicked link -->
-    <script>
-        function redirectTo(url) {
-            window.location.href = url;
-        }
-    </script>
+    <label>Yolov8:</label>
+    <a href="https://docs.ultralytics.com/">https://docs.ultralytics.com/</a>
 </body>
 </html>
