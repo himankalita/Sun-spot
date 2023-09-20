@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOLO Script Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h1>YOLO Script Result</h1>
+    <p>Output:</p>
+    <pre>{{ output }}</pre> <!-- Display the output here -->
+
+    {% if download_link %}
+        <p><a href="{{ download_link }}">Download CSV</a></p>
+    {% endif %}
+
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>

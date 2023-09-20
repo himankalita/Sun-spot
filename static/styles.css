@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    
+
+    background-image: url('/static/logo.png'); /* Adjust the URL to the image location */
+    background-repeat: no-repeat;
+    background-size: 100% 400%; /* Adjust to your preference */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Style the header */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Style the form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Style the download link */
+a.download-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Add more styles as needed */
