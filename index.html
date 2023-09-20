@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Links</title>
+    <title>Interactive Links</title>
     <style>
         /* Style for the label boxes */
         .label-box {
@@ -11,6 +11,12 @@
             border: 1px solid #ccc;
             cursor: pointer;
             margin-right: 10px;
+            transition: background-color 0.3s ease; /* Add a smooth transition effect */
+        }
+
+        /* Change label box color on hover */
+        .label-box:hover {
+            background-color: #ddd;
         }
 
         /* Remove the default underlines for links */
@@ -18,29 +24,27 @@
             text-decoration: none;
             color: #333;
         }
-        
     </style>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>SUN_SPOT_DETECTION</h1>
+    <h1>Interactive Links</h1>
 
     <!-- Label for "Data" -->
-    <div class="label-box" onclick="redirectTo('https://sdo.gsfc.nasa.gov/data/')">
+    <div class="label-box" onclick="openLinkInNewTab('https://sdo.gsfc.nasa.gov/data/')">
         Data
     </div>
 
     <!-- Label for "Code" -->
-    <div class="label-box" onclick="redirectTo('https://github.com/himankalita/Sun-spot')">
+    <div class="label-box" onclick="openLinkInNewTab('https://github.com/himankalita/Sun-spot')">
         Code
     </div>
 
     <!-- Label for "Yolov8" -->
-    <div class="label-box" onclick="redirectTo('https://docs.ultralytics.com/')">
+    <div class="label-box" onclick="openLinkInNewTab('https://docs.ultralytics.com/')">
         Yolov8
     </div>
 
-    <!-- JavaScript function to redirect to the clicked link -->
+    <!-- JavaScript function to open the link in a new tab -->
     <script>
         function openLinkInNewTab(url) {
             window.open(url, '_blank');
